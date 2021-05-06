@@ -1,0 +1,59 @@
+<section class="container">
+    <article class="row justify-content-md-center">
+        <p class="col-md-12 help-block align-center margin-top-xlg font-14">I'm working on the email information of new
+            registrations. <br>Just enter your information and register, then you can Sign In to the app from Login page.
+        </p>
+
+        <div class="col-md-5 mobile-margin-bottom-xlg">
+            <div class="card signup" id="signup">
+                <div class="card-header">
+                    <div class="col">
+                        <div class="row">
+                            <p class="icon-signup d-flex no-margin-bottom align-items-center"></p>
+                            <strong class="col padding-left-sm">Sign Up</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form (ngSubmit)="onSignup(f)" #f="ngForm">
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                placeholder="Email"
+                                aria-label="email"
+                                aria-describedby="email"
+                                ngModel>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="email">Password</label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-control"
+                                placeholder="Password"
+                                aria-label="password"
+                                aria-describedby="password"
+                                ngModel>
+                        </div>
+
+                        <div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                [disabled]="!f.valid">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

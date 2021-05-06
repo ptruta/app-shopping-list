@@ -1,0 +1,40 @@
+.title-popover {
+    position: relative;
+    z-index: 1;
+    &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #dedede;
+        margin-right: -5px;
+        margin-top: -6px;
+    }
+    &:after {
+        display: none;
+        content: attr(title);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: -1;
+        padding: 5px 10px;
+        background: #dedede;
+        box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.35);
+        color: #313131;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    &:hover:after, &:hover:before {
+        display: block;
+    }
+}
+
+.active > .nav-link {
+    background: rgba(0, 170, 52, 0.35);
+    border-radius: 6px;
+}

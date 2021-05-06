@@ -1,0 +1,27 @@
+.welcome-area {
+    position: relative;
+    height: calc(100vh - 71px);
+    width: 100%;
+    display: block;
+}
+
+.welcome-container {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+    }
+}
+
+.app-title {
+    text-transform: uppercase;
+}

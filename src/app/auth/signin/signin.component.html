@@ -1,0 +1,66 @@
+<section class="container">
+    <article class="row justify-content-md-center">
+        <p class="col-md-12 help-block align-center margin-top-xlg font-14">If you want to use the app without registration just click
+            <br><em class="color-blue">'Sign In'</em> button with its pre-defined username and password.
+        </p>
+
+        <div class="col-md-5 mobile-margin-bottom-xlg">
+            <div class="card signin" id="signin">
+                <div class="card-header">
+                    <div class="col">
+                        <div class="row">
+                            <p class="icon-login d-flex no-margin-bottom align-items-center"></p>
+                            <strong class="col padding-left-sm">Sign In</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form (ngSubmit)="onSignin()" #f="ngForm">
+                        <div
+                            id="user-data"
+                            ngModelGroup="userData"
+                            #userData="ngModelGroup">
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    aria-label="email"
+                                    aria-describedby="email"
+                                    ngModel=""
+                                    #email="ngModel">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="email">Password</label>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    class="form-control"
+                                    placeholder="Password"
+                                    aria-label="password"
+                                    aria-describedby="password"
+                                    ngModel=""
+                                    #password="ngModel">
+                            </div>
+                        </div>
+
+                        <div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                [disabled]="!f.valid">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

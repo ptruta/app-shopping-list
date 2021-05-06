@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.margin-right-sm {
+    margin-right: 5px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 25px;
+}
+
+.dropdown.open .dropdown-menu, .dropdown-toggle.open ~ .dropdown-menu, .navbar-toggler.open ~ .collapse {
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 781px) {
+    .hidden.mobile-seperator {
+        margin-top: 10px;
+        display: flex !important;
+    }
+
+    .mobile-margin-top-md {
+        margin-top: 10px;
+    }
+
+    .mobile-margin-bottom-xlg {
+        margin-bottom: 50px;
+    }
+
+    .active > .nav-link, .navbar-light .navbar-nav .nav-link {
+        padding: 10px;
+    }
+}

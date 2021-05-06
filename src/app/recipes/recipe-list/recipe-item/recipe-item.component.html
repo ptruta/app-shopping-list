@@ -1,0 +1,17 @@
+<a
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action flex-column align-items-start min-height-150 cursor-pointer">
+    <article class="d-flex w-100 justify-content-between">
+        <h4 class="mb-1 col no-padding margin-bottom-md">{{ recipe.name }}</h4>
+    </article>
+
+    <article class="row recipe-item">
+        <p class="mb-1 col">{{ recipe.description }}</p>
+
+        <img
+            [src]="recipe.imagePath"
+            alt="{{ recipe.name }}"
+            class="img-fluid mr-3 margin-top-sm">
+    </article>
+</a>
