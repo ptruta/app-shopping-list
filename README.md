@@ -9,12 +9,6 @@ The final app hosted on `Google Firebase` server with the `live environment`.
  
 Live demo:  [https://recipe-book-666.firebaseapp.com/](https://recipe-book-666.firebaseapp.com/)
 
-### Using the project with Stackblitz
-
-Simply go to this URL: [https://stackblitz.com/github/ofcyln/angular-shopping-list-application](https://stackblitz.com/github/ofcyln/angular-shopping-list-application)
-
-Stackblitz can only show you the visible UI of the project without cloning it to your local environment. Please not that, for security reasons `Stackblitz` doesn't show images, fonts or font icons that used on the project.
-
 ### Using the project on your local environment
 
 Run these commands in the terminal to run the app on your local environment
